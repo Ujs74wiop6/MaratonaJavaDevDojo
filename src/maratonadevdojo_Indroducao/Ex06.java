@@ -1,4 +1,4 @@
-package maratonadevdojo_Indroducao;
+package Maratonadevdojo_Indroducao;
 
 /**
  * @author Fabricio
