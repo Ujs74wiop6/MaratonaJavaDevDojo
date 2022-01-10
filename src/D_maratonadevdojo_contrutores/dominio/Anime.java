@@ -16,17 +16,21 @@ public class Anime {
     private int episodios;
     private String estudio;
 
-    public Anime(String genero, String nome, String tipo, int episodios, String estudio) {
+    public Anime(String genero, String nome, String tipo, int episodios) {
         this();
         this.genero = genero;
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
+    }
+
+    public Anime(String genero, String nome, String tipo, int episodios, String estudio) {
+        this(genero, nome, tipo, episodios);
         this.estudio = estudio;
     }
 
     public Anime() {
-
+        System.out.println("Dentro do construtor sem argumentos");
     }
 
     public void imprimir() {

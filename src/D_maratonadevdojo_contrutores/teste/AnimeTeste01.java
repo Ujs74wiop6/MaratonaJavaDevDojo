@@ -15,7 +15,7 @@ public class AnimeTeste01 {
     public static void main(String[] args) {
 
         // requisitando valores do construtor
-        Anime anime = new Anime("Ação", "Haijyuu", "TV", 12, "Tezuka Productions");
+        Anime anime = new Anime("Ação", "Haijyuu", "TV", 12, "Production IG");
 
         //requisitando valores do init
         //anime.init("Ação", "Akuma Drive", "TV", 12);
