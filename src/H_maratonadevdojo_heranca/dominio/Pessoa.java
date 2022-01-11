@@ -8,11 +8,29 @@ package H_maratonadevdojo_heranca.dominio;
  *
  * @author Fabricio
  */
+//classe mãe
 public class Pessoa {
 
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
+
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa ");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa 2");
+    }
+
+    public Pessoa(String nome) {
+        System.out.println("Dentro do construtor de pessoa");
+        this.nome = nome;
+    }
 
     public void imprime() {
         System.out.println(this.nome);
