@@ -14,7 +14,7 @@ public class TipoString {
         System.out.println("Qual seu nome ? ");
         nome = ler.next();
         
-        System.out.println("Olá Sr." + nome);
+        System.out.println("Olá Sr." + nome + " como vai??");
 
     }
 }
