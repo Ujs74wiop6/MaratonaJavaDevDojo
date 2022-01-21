@@ -13,7 +13,21 @@ import java.util.regex.Pattern;
  *
  * @author Fabricio
  */
-public class PatternMetcherTesteo05 {
+public class PatternMetcherTesteo05 {// \d = Todos os dígitos
+    // \D = Tudo o que não for dígito
+    // \s = Espaços em branco \t \n \f \r
+    // \S = Todos os caracters excluindo os brancos
+    // \w = a-ZA-Z, dígitos, _
+    // \W = Tudo que não for incluso no \w
+    // []   
+    // ? = Zero ou uma 
+    // * = Zero ou mais 
+    // + = Uma ou mais 
+    // {n,m} de n até m
+    // ()
+    // | o(v|c)o Exemplo: ovo | oco
+    // $ 
+    //.
 
     public static void main(String[] args) {
         // \d = Todos os dígitos
