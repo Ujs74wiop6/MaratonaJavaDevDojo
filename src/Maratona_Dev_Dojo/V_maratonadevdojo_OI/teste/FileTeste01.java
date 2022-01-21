@@ -6,6 +6,8 @@ package Maratona_Dev_Dojo.V_maratonadevdojo_OI.teste;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Instant;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,23 +21,20 @@ public class FileTeste01 {
     public static void main(String[] args) {
         //Sistema para criação de arquivo: 
         //Abaixo insira o caminho junto ao aquivo que deseja criar...
-        File file = new File("C:\\Users\\fabri\\OneDrive - Etec Centro Paula Souza\\Desktop\\Software\\FBC009\\teste.txt");
+        File file = new File("C:\\Users\\Home\\Documents\\NetBeansProjects\\MaratonaJavaDevDojo\\arquivo\\file.txt");
         //System.out.println(file);
         try {
-            //deleted arquivo here
-            //boolean isDeleted = file.delete();
-            //created arquivo here
             boolean isCreated = file.createNewFile();
-            System.out.println("Created: " + isCreated);
-            System.out.println("Path absolute: " + file.getAbsolutePath());
-            System.out.println("is Directory: " + file.isDirectory());
-            System.out.println("is File: " + file.isFile());
-            System.out.println("is Hidden: " + file.isHidden());
-            System.out.println("Last Mdified: " + new Date(file.lastModified()));
-
-            boolean exist = file.exists();
-            if (exist) {
-                System.out.println("Deleted: " + file.delete());
+            System.out.println("Created " + isCreated);
+            System.out.println("path " + file.getPath());
+            System.out.println("path absolute " + file.getAbsolutePath());
+            System.out.println("is directory  " + file.isDirectory());
+            System.out.println("is file " + file.isFile());
+            System.out.println("is hidden " + file.isHidden());
+            System.out.println("last modfied " + Instant.ofEpochMilli(file.lastModified()).atZone(ZoneId.systemDefault()));
+            boolean exists = file.exists();
+            if (exists) {
+                System.out.println("Deleted " + file.delete());
             }
         } catch (IOException e) {
             e.printStackTrace();

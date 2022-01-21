@@ -14,12 +14,12 @@ import java.nio.file.Path;
 public class ResolveTeste01 {
 
     public static void main(String[] args) {
-        Path dir = Paths.get("home/fabricio");
+        Path dir = Paths.get("/Software/GestãoTec");
         Path arquivo = Paths.get("dev/arquivo.txt");
         Path resolve = dir.resolve(arquivo);
         System.out.println(resolve);
 
-        Path absoluto = Paths.get("/home/fabricio");
+        Path absoluto = Paths.get("/Software/GestãoTec");
         Path relativo = Paths.get("dev");
         Path file = Paths.get("file.txt");
 
