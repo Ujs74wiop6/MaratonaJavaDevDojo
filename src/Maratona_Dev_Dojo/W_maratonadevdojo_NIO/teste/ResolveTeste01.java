@@ -4,22 +4,22 @@
  */
 package Maratona_Dev_Dojo.W_maratonadevdojo_NIO.teste;
 
-import java.nio.file.Paths;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  *
- * @author Fabricio
+ * @author Home
  */
 public class ResolveTeste01 {
 
     public static void main(String[] args) {
-        Path dir = Paths.get("/Software/GestãoTec");
+        Path dir = Paths.get("home/fabricio");
         Path arquivo = Paths.get("dev/arquivo.txt");
         Path resolve = dir.resolve(arquivo);
         System.out.println(resolve);
 
-        Path absoluto = Paths.get("/Software/GestãoTec");
+        Path absoluto = Paths.get("/home/fabricio");
         Path relativo = Paths.get("dev");
         Path file = Paths.get("file.txt");
 

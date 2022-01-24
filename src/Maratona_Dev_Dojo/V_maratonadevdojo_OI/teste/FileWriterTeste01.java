@@ -19,11 +19,10 @@ import java.io.FileWriter;
 public class FileWriterTeste01 {
 
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\fabri\\OneDrive - Etec Centro Paula Souza\\Desktop\\Software\\FBC009\\teste.txt");
-        try ( FileWriter fw = new FileWriter(file)) {
-            fw.write("O dev dojo é lindo, é o melhor curso do Brasil!!!\nTestando a próxima linha...");
+        File file = new File("file.txt");
+        try (FileWriter fw = new FileWriter(file, true)) {
+            fw.write("O DeveDojo é lindo, é o melhor curso do Brasilll\nTestando a próxima linha...\n");
             fw.flush();
-
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -14,9 +14,9 @@ import java.nio.file.Paths;
 public class PathTeste01 {
 
     public static void main(String[] args) {
-        Path p1 = Paths.get("C:/Users/Home/Desktop/Software/GestãoTec/file.txt");
-        Path p2 = Paths.get("C:/Users/Home/Desktop/Software/GestãoTec", "file.txt");
-        Path p3 = Paths.get("C:", "Users/Home/Desktop/Software/GestãoTec", "file.txt");
+        Path p1 = Paths.get("C:\\Users\\Home\\Desktop\\Software\\GestãoTec\\file.txt");
+        Path p2 = Paths.get("C:\\Users\\Home\\Desktop\\Software\\GestãoTec", "file.txt");
+        Path p3 = Paths.get("C:", "Users\\Home\\Desktop\\Software\\GestãoTec", "file.txt");
         Path p4 = Paths.get("C:", "Users", "Home", "Desktop", "Software", "GestãoTec", "file.txt");
         System.out.println(p1.getFileName());
         System.out.println(p2.getFileName());

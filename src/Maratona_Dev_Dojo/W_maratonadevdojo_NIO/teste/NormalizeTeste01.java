@@ -14,14 +14,14 @@ import java.nio.file.Paths;
 public class NormalizeTeste01 {
 
     public static void main(String[] args) {
-        String diretorioProjeto = "GestãoTec/dev";
+        String diretorioProjeto = "home/fabricio/dev";
         String arquivoTxt = "../../arquivo.txt";
 
         Path path1 = Paths.get(diretorioProjeto, arquivoTxt);
         System.out.println(path1);
         System.out.println(path1.normalize());
 
-        Path path2 = Paths.get("GestãoTec/dev/");
+        Path path2 = Paths.get("/home/./fabricio/./dev/");
         System.out.println(path2);
         System.out.println(path2.normalize());
 
