@@ -19,7 +19,7 @@ import java.nio.file.attribute.FileTime;
 public class BasicFileAtrributesTeste02 {
 
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("pasta2/new.txt");
+        Path path = Paths.get("pasta2/novo_path.txt");
         BasicFileAttributes basicFileAttributes = Files.readAttributes(path, BasicFileAttributes.class);
 
         FileTime creationTime = basicFileAttributes.creationTime();

@@ -4,12 +4,12 @@
  */
 package Maratona_Dev_Dojo.W_NIO.teste;
 
-import java.nio.file.Paths;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  *
- * @author Fabricio
+ * @author Home
  */
 public class ResolveTeste01 {
 

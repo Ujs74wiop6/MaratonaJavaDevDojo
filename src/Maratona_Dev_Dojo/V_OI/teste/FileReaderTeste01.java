@@ -15,10 +15,11 @@ import java.io.IOException;
 public class FileReaderTeste01 {
 
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\fabri\\OneDrive - Etec Centro Paula Souza\\Desktop\\Software\\FBC009\\teste.txt");
-        try ( FileReader fr = new FileReader(file)) {
-//            char[] in = new char[77];
-//            fr.read(in);
+        File file = new File("file.txt");
+        try (FileReader fr = new FileReader(file)) {
+//            char[] in = new char[1000];
+//            int size = fr.read(in);
+//            System.out.println(size);
 //            for (char c : in) {
 //                System.out.print(c);
 //            }
@@ -26,7 +27,6 @@ public class FileReaderTeste01 {
             while ((i = fr.read()) != -1) {
                 System.out.print((char) i);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }

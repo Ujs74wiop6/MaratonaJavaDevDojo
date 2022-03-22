@@ -15,7 +15,7 @@ import java.io.FileReader;
 public class BufferedReaderTeste01 {
 
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\fabri\\OneDrive - Etec Centro Paula Souza\\Desktop\\Software\\FBC009\\teste.txt");
+        File file = new File("file.txt");
         try (FileReader fr = new FileReader(file);  
                 BufferedReader br = new BufferedReader(fr)) {
             String linha;
